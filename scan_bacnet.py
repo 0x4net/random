@@ -19,7 +19,7 @@ time.sleep(5)
 
 
 # bacnet.whois() will contain a list of tuples, with all the devices that responded to the whois()
-# Example: [('Device 9981', 'Alerton', '192.168.1.200', 9981)]
+# Example: [('Device 9981', 'VenderName', '192.168.1.150', 9981)]
 
 for i, (deviceId, companyId, devIp, numDeviceId) in enumerate(bacnet.devices):
     print(f"-------- Device #{numDeviceId} --------")
